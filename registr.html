@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+
+    <style>
+        *{margin: 0 auto; padding: 0;}
+        
+        a {color:#333333; text-decoration: none; outline: none}
+        a:hover, a:active {text-decoration: none;}
+
+
+        .cardWrap{
+            text-align: center;
+            width:100%;
+        }
+        .cardTitle{
+            margin: 16px;
+        }
+        .cardContent{
+            border-radius: 5px;
+            margin: 20px;
+            /* padding: 15px; */
+            text-align: left;
+        }
+        div>p{
+            margin-bottom: 9px;
+            color:#333333;
+            font-size: 16px;
+        }
+        .cardContent div{
+            margin: 10px 0px;
+        }
+
+        .card_info textarea{
+            width:95%;
+            height: 96px;
+            padding: 10px 0px 0px 10px;
+            color:#AAAAAA;
+            border-radius: 5px;
+            box-shadow: 0px 3px 6px #1C519F;
+        }
+
+        .cardbtn a{
+            display: block;
+            color:#fff;
+        }
+        .card_addr{
+            display: flex;
+        }
+        .card_addr>input{
+            width:45%;
+        }
+        .card_addr>input:first-child{margin-right: 10px;}
+        input{
+            width:95%;
+            padding: 10px 0px 10px 10px;
+            border: 1px solid #AAAAAA;
+            border-radius: 5px;
+            box-shadow: 0px 3px 6px #1C519F;
+        }
+
+        input[type="submit"]{
+            padding: 0;
+            width:40vw;
+            height: 40px;
+            background-color:#2FA3DA;
+            border:0;
+            border-radius: 25px;
+            box-shadow: 0px 3px 6px #1C519F;
+            color:white;
+        }
+
+        .card_submit{
+            text-align: center;    
+            margin-top: 30px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardWrap">
+        <div class="cardTitle">
+            <h1>카드 등록</h1>
+        </div>
+        <div class="cardContent">
+            <form action="#" method="post">
+
+                <div class="card_info">
+                    <p>안내문</p>
+                    <textarea name="" id="" cols="30" rows="10">안내문구</textarea>
+                </div>
+
+                <div class="card_phone">
+                    <p>전화번호</p>
+                    <input type="tel" class="phone" name="" placeholder="010-1234-1234">
+                </div>
+
+                <div class="card_tag">
+                    <p>태그인쇄번호</p>
+                    <input type="text" class="cardTag" name="" placeholder="KKRW071C000000000">
+                </div>
+
+                <div class="card_house">
+                    <p>아파트명</p>
+                    <input type="text" class="cardHouse" name="" placeholder="00아파트">
+                </div>
+                
+                <div class="card_address">
+                    <p>동 / 호</p>
+                    <div class="card_addr">
+                        <input type="text" class="cardAddr1" name="" placeholder="000(동)">
+                        <input type="text" class="cardAddr2" name="" placeholder="000(호)">
+                    </div>
+                </div>
+
+                <div class="card_submit">
+                    <input type="submit" value="본인확인">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/flowtype.js"></script>
+    <script>
+        $("body").flowtype({
+            minFont:12,
+            maxFont:30,
+            minimun:400,	//
+            maximun:1920	//
+	    });
+    </script>
+</body>
+</html>

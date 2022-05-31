@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+
+    <style>
+        *{margin: 0 auto; padding: 0;}
+
+        .cardWrap{
+            text-align: center;
+            width:100%;
+        }
+        .cardLogo{
+            padding: 16px;
+        }
+
+        .cardTitle h1{
+            font-size: 24px;
+            color:#333333;
+        }
+
+        .cardContent{
+            text-align: left;
+            overflow-y: scroll;
+            height: 45vh;
+            border: 1px solid #707070;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .cardContent p{
+            color:#707070;
+        }
+
+        .cardbtn{
+            width:40vw;
+            margin: 20px auto;
+            background-color:#2FA3DA;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0px 3px 6px #1C519F;
+        }
+        .cardbtn a{
+            display: block;
+            font-size: 16px;
+        }
+        a {color: #fff; text-decoration: none; outline: none}
+        a:hover, a:active {text-decoration: none; color:#fff;}
+    </style>
+</head>
+<body>
+    <div class="cardWrap">
+        <div class="cardLogo">
+            <img src="./images/logo.png" alt="로고">
+        </div>
+        <div class="cardTitle">
+            <h1>음식물 종량제 <br>모바일 카드 이용약관</h1>
+        </div>
+        <div class="cardContent">
+                <p>법 관련 정보</p>
+                
+                <p>
+                    약관의 규제에 관한 법률 제2조(정의) 이 법에서
+                    사용하는 용어의 정의는 다음과 같다.
+                </p>
+                
+                <p>
+                    1. "약관"이란 그 명칭이나 형태 또는 범위에
+                    상관없이 계약의 한쪽 당사자가 여러 명의
+                    상대방과 계약을 체결하기 위하여 일정한
+                    형식으로 미리 마련한 계약의 내용을 말한다.
+                </p>
+                
+                <p>
+                    2. "사업자"란 계약의 한쪽 당사자로서 상대
+                    당사자에게 약관을 계약의 내용으로 할 것을
+                    제안하는 자를 말한다.
+                </p>
+                
+                <p>
+                    3."고객"이란 계약의 한쪽 당사자로서
+                    사업자로부터 약관을 계약의 내용으로 할 것을 제안받은 자를 말한다.
+                </p>
+        </div>
+        <div class="cardbtn">
+            <!-- 이 이분에 링크 연결하시면 됩니다. -->
+            <a href="#">확인</a>
+        </div>
+    </div>
+
+    <script src="./js/flowtype.js"></script>
+    <script>
+        $("body").flowtype({
+            minFont:12,
+            maxFont:30,
+            minimun:400,	//
+            maximun:1920	//
+	    });
+    </script>
+</body>
+</html>

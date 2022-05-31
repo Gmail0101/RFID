@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+
+    <style>
+        *{margin: 0 auto; padding: 0;}
+
+        body{background-color: #EEEEEE;}
+
+        .cardWrap{
+            text-align: center;
+            width:100%;
+        }
+
+        .cardLogo{
+            height: 80px;
+            background: linear-gradient( to bottom, #2FA3DA, #5C25DF );
+            position: relative;
+            box-shadow: 0px 3px 6px #1C519F;
+        }
+        .cardLogo img{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cardContent{
+            margin: 0px 24px;
+        }
+
+        .cardCon{
+            display: flex;
+            /* flex-wrap:wrap; */
+            margin-top: 40px;
+        }
+        .cardCon:last-child{
+            margin-top: 16px;
+        }
+        .cardCon>div{
+            box-shadow: 0px 3px 6px #1C519F;
+            border-radius: 5px;
+            width:50%; height: 140px;
+        }
+        .cardCon>div:first-child{
+            margin-right: 16px;
+        }
+       
+        a {color: #fff; text-decoration: none; outline: none}
+        a:hover, a:active {text-decoration: none; color:#fff;}
+
+        .content_card,.content_phone,.content_price,.content_pay{
+            position: relative;
+        }
+        .con_text{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width:100%;
+        }
+        .con_text p{
+            margin-top: 24px;
+        }
+        .content_phone>.con_text>p{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardWrap">
+        <div class="cardLogo">
+            <img src="./images/logo_white.png" alt="로고">
+        </div>
+        <div class="cardContent">
+            <div class="cardCon">
+                <div class="content_card">
+                    <div class="con_text">
+                        <img src="./images/icon/icon_0001.png" alt="이미지">
+                        <p>카드결제</p>
+                    </div>
+                </div>
+                <div class="content_phone">
+                    <div class="con_text">
+                        <img src="./images/icon/icon_0002.png" alt="이미지">
+                        <p>휴대폰 결제</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardCon">
+                <div class="content_price">
+                    <div class="con_text">
+                        <img src="./images/icon/icon_0003.png" alt="이미지">
+                        <p>실시간 계좌이체</p>
+                    </div>
+                </div>
+                <div class="content_pay">
+                    <div class="con_text">
+                        <img src="./images/icon/icon_0004.png" alt="이미지">
+                        <p>pay 결제</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./js/flowtype.js"></script>
+    <script>
+        $("body").flowtype({
+            minFont:12,
+            maxFont:30,
+            minimun:400,	//
+            maximun:1920	//
+	    });
+    </script>
+</body>
+</html>

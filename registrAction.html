@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+
+    <style>
+        *{margin: 0 auto; padding: 0;}
+        
+        a {color:#333333; text-decoration: none; outline: none}
+        a:hover, a:active {text-decoration: none;}
+
+
+        .cardWrap{
+            text-align: center;
+            width:100%;
+        }
+        .cardTitle{
+            margin: 16px;
+        }
+        .cardContent{
+            border-radius: 5px;
+            margin: 20px;
+            padding: 15px;
+            text-align: left;
+        }
+        .cardContent div{
+            margin: 10px 0px;
+        }
+
+        .card_sms p{
+            margin-bottom: 10px;
+        }
+
+       
+     
+        input{
+            width:100%;
+            padding: 10px 0px 10px 10px;
+            border: 1px solid #AAAAAA;
+            border-radius: 5px;
+            box-shadow: 0px 3px 6px #1C519F;
+        }
+
+
+        .card_submit{
+            text-align: center;
+            margin-top: 30px !important;
+        }
+        input[type="submit"]{
+            width:40vw;
+            height: 40px;
+            background-color: #333333;
+            background-color:#2FA3DA;
+            padding: 0;
+            border:0;
+            border-radius: 25px;
+            box-shadow: 0px 3px 6px #1C519F;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardWrap">
+
+        <div class="cardTitle">
+            <h1>카드 등록</h1>
+        </div>
+        <div class="cardContent">
+            <form action="" method="post">
+
+                <div class="card_sms">
+                    <p>전달받은 문자입력</p>
+                    <input type="tel" class="card_sms" name="">
+                </div>
+
+
+                <div class="card_submit">
+                    <input type="submit" value="등록하기">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/flowtype.js"></script>
+    <script>
+        $("body").flowtype({
+            minFont:12,
+            maxFont:30,
+            minimun:400,	//
+            maximun:1920	//
+	    });
+    </script>
+</body>
+</html>
